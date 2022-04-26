@@ -24,6 +24,11 @@ body{
     background : linear-gradient(135deg, hsl(0, 0%, 100%),  hsl(0, 100%, 98%)),
                  linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     background-size: cover;
+}
+
+
+main{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,6 +82,7 @@ form{
     border: 1px solid hsl(0, 36%, 70%); 
     align-items: center;
     justify-content: center;
+    background-color: transparent;
     width: 90%;
     border-radius: 50px;
     gap: 0.3rem;
@@ -84,7 +90,7 @@ form{
 
 input{
     border: none;
-    background: none;
+    background: transparent;
     flex: 1;
     padding: 1rem 1.5rem;
 }
@@ -92,10 +98,11 @@ input{
 input:focus{
     outline: none;
 }
-/*
-form img, #error-message{
+
+
+#error{
     display: none;
-} */
+}
 
 button{
     padding: 1.5rem 2.5rem;
@@ -108,11 +115,74 @@ button{
     cursor: pointer;   
 }
 
-#error-message{
-    font-size: 0.8rem;
-    color: red;
-    width: 90%;
-    padding: 0.5rem 1.5rem;
+#error{
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+button:hover{
+    opacity: 0.7;
 }
 
 
+@media all and (min-width: 1440px) { 
+    body{
+        min-width: 100vh;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-position: center;   
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        position: absolute;
+        border: none;
+    }
+
+
+    #head{
+        width: 70%;
+    }
+
+    #img-hero{
+        grid-row: 1 / span 3;
+        grid-column: 2;
+        justify-self: end;
+        height: 100%;
+    }
+
+    #img-hero{
+        content: url(images/hero-desktop.jpg);
+    }
+
+    #middle-text{
+        justify-self: center;
+        align-self: center;
+        width: 70%;
+    }
+
+    h1{
+        width: 70%;
+        text-align: start;
+    }
+
+    #middle-text p{
+        text-align: start;
+        width: 80%;
+    }
+
+    form {
+        justify-self:start;
+        align-self: start;
+        width: 50%;
+        margin-left: 110px;
+    }
+
+} /* end media */
