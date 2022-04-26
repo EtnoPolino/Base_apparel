@@ -1,2 +1,3 @@
-# Base_apparel
-Challenge Base Apparel
+# Frontend Mentor - Base Apparel coming soon page
+
+

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+/************ add by Frontend *******************/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/**********************************************/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+body{
+    min-height: 100vh;
+    background : linear-gradient(135deg, hsl(0, 0%, 100%),  hsl(0, 100%, 98%)),
+                 linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black; 
+}
+
+#head{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+#head img{
+    width: 7.5rem
+}
+
+#img-hero img{
+    width: 100%;
+    height: auto;
+}
+
+#middle-text{
+    margin-top: 3.5em;
+    margin-bottom: 2em;
+    width: 90%;
+    text-align: center;  
+    
+}
+
+span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+#middle-text h1{
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#middle-text p{
+    color: hsl(0, 36%, 70%);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+
+form{
+    display: flex;
+    border: 1px solid hsl(0, 36%, 70%); 
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border-radius: 50px;
+    gap: 0.3rem;
+}
+
+input{
+    border: none;
+    background: none;
+    flex: 1;
+    padding: 1rem 1.5rem;
+}
+
+input:focus{
+    outline: none;
+}
+/*
+form img, #error-message{
+    display: none;
+} */
+
+button{
+    padding: 1.5rem 2.5rem;
+    background-image: url(images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1fr;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;   
+}
+
+#error-message{
+    font-size: 0.8rem;
+    color: red;
+    width: 90%;
+    padding: 0.5rem 1.5rem;
+}
+
+
